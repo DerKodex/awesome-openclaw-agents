@@ -3,12 +3,25 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Stars](https://img.shields.io/github/stars/mergisi/awesome-openclaw-agents?style=social)](https://github.com/mergisi/awesome-openclaw-agents)
 
-> A curated collection of AI agent templates, MCP servers, tools, and resources for OpenClaw, Clawdbot, and MoltBot ecosystems.
+> A curated collection of AI agent templates, MCP servers, tools, and resources for the OpenClaw ecosystem. Every template is a copy-paste ready SOUL.md file.
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:7C3AED&height=180&section=header&text=%F0%9F%A6%9E%20Awesome%20OpenClaw%20Agents&fontSize=36&fontColor=ffffff&fontAlignY=35" width="100%"/>
 </p>
+
+<div align="center">
+
+**Don't want to set up manually?**
+
+[**Deploy any agent with Docker + Telegram in 5 minutes →**](https://crewclaw.com/create-agent)
+
+CrewClaw packages your SOUL.md with Dockerfile, Telegram bot, and deployment config. No code required.
+
+</div>
+
+---
 
 ## Contents
 
@@ -21,67 +34,95 @@
 - [MCP Servers](#mcp-servers)
 - [Integrations](#integrations)
 - [Tools](#tools)
-- [Tutorials](#tutorials)
+- [Tutorials & Guides](#tutorials--guides)
 - [Community](#community)
 
 ---
 
 ## Agent Templates
 
-Ready-to-use SOUL.md templates for your AI agents.
+Ready-to-use SOUL.md templates for your AI agents. Copy the SOUL.md, register with `openclaw agents add`, and start the gateway.
+
+```bash
+# Quick start with any template
+git clone https://github.com/mergisi/awesome-openclaw-agents.git
+openclaw agents add my-agent --workspace ./awesome-openclaw-agents/agents/productivity/orion
+openclaw gateway start
+```
 
 ### Productivity
 
-| Agent | Description | Author |
-|-------|-------------|--------|
-| [🎯 Orion](agents/productivity/orion/) | Task coordinator and project manager | [@openclaw](https://github.com/openclaw) |
-| [📋 TaskMaster](agents/productivity/taskmaster/) | Advanced task breakdown and tracking | Community |
-| [📅 CalendarBot](agents/productivity/calendar-bot/) | Schedule management and reminders | Community |
-| [📧 InboxZero](agents/productivity/inbox-zero/) | Email triage and response drafting | Community |
-| [🎯 FocusGuard](agents/productivity/focus-guard/) | Deep work session manager | Community |
+| Agent | Description | SOUL.md | Deploy |
+|-------|-------------|---------|--------|
+| [🎯 Orion](agents/productivity/orion/) | Task coordinator and project manager | [View](agents/productivity/orion/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent/project-manager-soul-md) |
+| [📋 TaskMaster](agents/productivity/taskmaster/) | Advanced task breakdown and tracking | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [📅 CalendarBot](agents/productivity/calendar-bot/) | Schedule management and reminders | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [📧 InboxZero](agents/productivity/inbox-zero/) | Email triage and response drafting | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [🎯 FocusGuard](agents/productivity/focus-guard/) | Deep work session manager | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Development
 
-| Agent | Description | Author |
-|-------|-------------|--------|
-| [💻 CodeReviewer](agents/development/code-reviewer/) | PR review and code quality checks | Community |
-| [🐛 BugHunter](agents/development/bug-hunter/) | Debugging assistant and error analyzer | Community |
-| [📚 DocWriter](agents/development/doc-writer/) | Documentation generator | Community |
-| [🔧 DevOpsBot](agents/development/devops-bot/) | CI/CD and infrastructure helper | Community |
-| [🧪 TestCrafter](agents/development/test-crafter/) | Test case generator | Community |
-| [🏗️ Architect](agents/development/architect/) | System design consultant | Community |
+| Agent | Description | SOUL.md | Deploy |
+|-------|-------------|---------|--------|
+| [💻 CodeReviewer](agents/development/code-reviewer/) | PR review and code quality checks | Coming soon | [Deploy →](https://crewclaw.com/create-agent/code-reviewer-soul-md) |
+| [🐛 BugHunter](agents/development/bug-hunter/) | Debugging assistant and error analyzer | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [📚 DocWriter](agents/development/doc-writer/) | Documentation generator | Coming soon | [Deploy →](https://crewclaw.com/create-agent/technical-writer-soul-md) |
+| [🔧 DevOpsBot](agents/development/devops-bot/) | CI/CD and infrastructure helper | Coming soon | [Deploy →](https://crewclaw.com/create-agent/devops-engineer-soul-md) |
+| [🧪 TestCrafter](agents/development/test-crafter/) | Test case generator | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [🏗️ Architect](agents/development/architect/) | System design consultant | Coming soon | [Deploy →](https://crewclaw.com/create-agent/software-engineer-soul-md) |
 
 ### Marketing & Content
 
-| Agent | Description | Author |
-|-------|-------------|--------|
-| [✍️ Echo](agents/marketing/echo/) | Content writer for blogs, social, emails | [@openclaw](https://github.com/openclaw) |
-| [🐦 TweetCrafter](agents/marketing/tweet-crafter/) | Viral Twitter/X thread creator | Community |
-| [🔍 SEOExpert](agents/marketing/seo-expert/) | SEO optimization specialist | Community |
-| [📰 NewsletterPro](agents/marketing/newsletter-pro/) | Email newsletter writer | Community |
-| [🎨 CopyMaster](agents/marketing/copy-master/) | Sales and ad copy specialist | Community |
-| [📱 SocialScheduler](agents/marketing/social-scheduler/) | Multi-platform content planner | Community |
+| Agent | Description | SOUL.md | Deploy |
+|-------|-------------|---------|--------|
+| [✍️ Echo](agents/marketing/echo/) | Content writer for blogs, social, emails | [View](agents/marketing/echo/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent/content-writer-soul-md) |
+| [🐦 TweetCrafter](agents/marketing/tweet-crafter/) | Viral Twitter/X thread creator | Coming soon | [Deploy →](https://crewclaw.com/create-agent/social-media-manager-soul-md) |
+| [🔍 SEOExpert](agents/marketing/seo-expert/) | SEO optimization specialist | Coming soon | [Deploy →](https://crewclaw.com/create-agent/seo-specialist-soul-md) |
+| [📰 NewsletterPro](agents/marketing/newsletter-pro/) | Email newsletter writer | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [🎨 CopyMaster](agents/marketing/copy-master/) | Sales and ad copy specialist | Coming soon | [Deploy →](https://crewclaw.com/create-agent/copywriter-soul-md) |
+| [📱 SocialScheduler](agents/marketing/social-scheduler/) | Multi-platform content planner | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Business
 
-| Agent | Description | Author |
-|-------|-------------|--------|
-| [📊 Radar](agents/business/radar/) | Data analyst and insights generator | [@openclaw](https://github.com/openclaw) |
-| [💼 CEOAssistant](agents/business/ceo-assistant/) | Executive support and decision helper | Community |
-| [📈 SalesCoach](agents/business/sales-coach/) | Sales strategy and outreach | Community |
-| [🤝 CustomerSuccess](agents/business/customer-success/) | Customer support and retention | Community |
-| [📑 ContractReviewer](agents/business/contract-reviewer/) | Legal document analyzer | Community |
-| [💰 FinanceAdvisor](agents/business/finance-advisor/) | Budget and financial planning | Community |
+| Agent | Description | SOUL.md | Deploy |
+|-------|-------------|---------|--------|
+| [📊 Radar](agents/business/radar/) | Data analyst and insights generator | [View](agents/business/radar/SOUL.md) | [Deploy →](https://crewclaw.com/create-agent/data-analyst-soul-md) |
+| [💼 CEOAssistant](agents/business/ceo-assistant/) | Executive support and decision helper | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [📈 SalesCoach](agents/business/sales-coach/) | Sales strategy and outreach | Coming soon | [Deploy →](https://crewclaw.com/create-agent/sales-representative-soul-md) |
+| [🤝 CustomerSuccess](agents/business/customer-success/) | Customer support and retention | Coming soon | [Deploy →](https://crewclaw.com/create-agent/customer-support-soul-md) |
+| [📑 ContractReviewer](agents/business/contract-reviewer/) | Legal document analyzer | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [💰 FinanceAdvisor](agents/business/finance-advisor/) | Budget and financial planning | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
 
 ### Personal
 
-| Agent | Description | Author |
-|-------|-------------|--------|
-| [🏠 HomeManager](agents/personal/home-manager/) | Household task coordinator | Community |
-| [🏋️ FitnessCoach](agents/personal/fitness-coach/) | Workout and nutrition planner | Community |
-| [📖 LearningBuddy](agents/personal/learning-buddy/) | Study assistant and tutor | Community |
-| [✈️ TravelPlanner](agents/personal/travel-planner/) | Trip planning and booking helper | Community |
-| [🧘 MindfulBot](agents/personal/mindful-bot/) | Mental wellness companion | Community |
+| Agent | Description | SOUL.md | Deploy |
+|-------|-------------|---------|--------|
+| [🏠 HomeManager](agents/personal/home-manager/) | Household task coordinator | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [🏋️ FitnessCoach](agents/personal/fitness-coach/) | Workout and nutrition planner | Coming soon | [Deploy →](https://crewclaw.com/create-agent/fitness-coach-soul-md) |
+| [📖 LearningBuddy](agents/personal/learning-buddy/) | Study assistant and tutor | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [✈️ TravelPlanner](agents/personal/travel-planner/) | Trip planning and booking helper | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+| [🧘 MindfulBot](agents/personal/mindful-bot/) | Mental wellness companion | Coming soon | [Deploy →](https://crewclaw.com/create-agent) |
+
+---
+
+## Quick Deploy with CrewClaw
+
+Don't want to configure manually? [CrewClaw](https://crewclaw.com/create-agent) generates a complete deployment package for any agent:
+
+```
+Your CrewClaw package includes:
+├── agents/your-agent/SOUL.md    # Agent configuration
+├── Dockerfile                    # Container setup
+├── docker-compose.yml            # One-command deploy
+├── bot.js                        # Telegram bot (grammy)
+├── .env.example                  # API keys template
+├── package.json                  # Dependencies
+└── README.md                     # Setup instructions
+```
+
+**Single agent: $9** | **Team of 3 agents: $19** | **Free: Copy SOUL.md only**
+
+[Create your agent →](https://crewclaw.com/create-agent)
 
 ---
 
@@ -98,18 +139,18 @@ Model Context Protocol servers to extend agent capabilities.
 
 ### Community
 
-| Server | Description | Author |
-|--------|-------------|--------|
-| [mcp-notion](https://github.com/community/mcp-notion) | Notion integration | Community |
-| [mcp-google-calendar](https://github.com/community/mcp-google-calendar) | Google Calendar access | Community |
-| [mcp-github](https://github.com/community/mcp-github) | GitHub operations | Community |
-| [mcp-slack](https://github.com/community/mcp-slack) | Slack messaging | Community |
-| [mcp-postgres](https://github.com/community/mcp-postgres) | PostgreSQL queries | Community |
-| [mcp-stripe](https://github.com/community/mcp-stripe) | Stripe payments | Community |
-| [mcp-shopify](https://github.com/community/mcp-shopify) | Shopify store management | Community |
-| [mcp-twitter](https://github.com/community/mcp-twitter) | Twitter/X posting | Community |
-| [mcp-discord](https://github.com/community/mcp-discord) | Discord bot integration | Community |
-| [mcp-linear](https://github.com/community/mcp-linear) | Linear issue tracking | Community |
+| Server | Description |
+|--------|-------------|
+| mcp-notion | Notion integration |
+| mcp-google-calendar | Google Calendar access |
+| mcp-github | GitHub operations |
+| mcp-slack | Slack messaging |
+| mcp-postgres | PostgreSQL queries |
+| mcp-stripe | Stripe payments |
+| mcp-shopify | Shopify store management |
+| mcp-twitter | Twitter/X posting |
+| mcp-discord | Discord bot integration |
+| mcp-linear | Linear issue tracking |
 
 ---
 
@@ -119,23 +160,16 @@ Connect your agents to external services.
 
 ### Messaging
 
-- [Telegram Integration](integrations/telegram/) - Chat with agents via Telegram
-- [Slack Integration](integrations/slack/) - Slack workspace connection
-- [Discord Integration](integrations/discord/) - Discord server bot
-- [WhatsApp Integration](integrations/whatsapp/) - WhatsApp Business API
-
-### Mobile
-
-- [iOS Shortcuts](integrations/ios-shortcuts/) - Control agents from iPhone
-- [iOS Widgets](integrations/ios-widgets/) - Home screen quick access
-- [Android Tasker](integrations/android-tasker/) - Android automation
+- **Telegram** - Chat with agents via Telegram (built-in to OpenClaw)
+- **Slack** - Slack workspace connection (built-in to OpenClaw)
+- **Discord** - Discord server bot (built-in to OpenClaw)
+- **Email** - Email channel (built-in to OpenClaw)
 
 ### Automation
 
-- [n8n Workflows](integrations/n8n/) - n8n integration nodes
-- [Zapier](integrations/zapier/) - Zapier connection
-- [Make.com](integrations/make/) - Make scenarios
-- [GitHub Actions](integrations/github-actions/) - CI/CD integration
+- **n8n** - n8n integration nodes
+- **GitHub Actions** - CI/CD integration
+- **Cron / pm2 / systemd** - Always-on agent scheduling
 
 ---
 
@@ -143,99 +177,60 @@ Connect your agents to external services.
 
 Utilities and helpers for working with OpenClaw.
 
-### CLI Tools
-
 | Tool | Description |
 |------|-------------|
-| [openclaw-cli](tools/openclaw-cli/) | Official command line interface |
-| [agent-validator](tools/agent-validator/) | Validate SOUL.md syntax |
-| [mcp-tester](tools/mcp-tester/) | Test MCP server connections |
-
-### Development
-
-| Tool | Description |
-|------|-------------|
-| [openclaw-sdk-typescript](tools/sdk-typescript/) | TypeScript SDK |
-| [openclaw-sdk-python](tools/sdk-python/) | Python SDK |
-| [agent-debugger](tools/agent-debugger/) | Debug agent conversations |
-
-### Monitoring
-
-| Tool | Description |
-|------|-------------|
-| [agent-analytics](tools/agent-analytics/) | Usage analytics dashboard |
-| [cost-tracker](tools/cost-tracker/) | API cost monitoring |
-| [health-checker](tools/health-checker/) | Gateway health monitoring |
+| [openclaw CLI](https://crewclaw.com/blog/openclaw-cli-commands-reference) | Official CLI - complete command reference |
+| agent-validator | Validate SOUL.md syntax |
+| mcp-tester | Test MCP server connections |
 
 ---
 
-## Tutorials
+## Tutorials & Guides
 
 Learn how to build and deploy agents.
 
 ### Getting Started
 
-- [Quick Start Guide](tutorials/quickstart.md) - First agent in 5 minutes
-- [SOUL.md Anatomy](tutorials/soul-anatomy.md) - Understanding agent configuration
-- [MCP Basics](tutorials/mcp-basics.md) - Adding tools to agents
+- [What is OpenClaw?](https://crewclaw.com/blog/what-is-openclaw-ai-agent-framework) - Complete guide to the framework
+- [Create Your First Agent](https://crewclaw.com/blog/how-to-create-ai-agent-openclaw) - No code required
+- [OpenClaw Setup Guide 2026](https://crewclaw.com/blog/openclaw-setup-guide-2026) - Install, configure, run
+- [SOUL.md Templates](https://crewclaw.com/blog/soul-md-examples-templates) - 10 ready-to-use examples
 
-### Intermediate
+### Multi-Agent & Orchestration
 
-- [Multi-Agent Workflows](tutorials/multi-agent.md) - Agents working together
-- [Telegram Bot Setup](tutorials/telegram-setup.md) - Mobile access
-- [iOS Shortcuts Guide](tutorials/ios-shortcuts.md) - iPhone integration
+- [Multi-Agent Setup Guide](https://crewclaw.com/blog/openclaw-multi-agent-setup-guide) - Run multiple agents together
+- [Agent-to-Agent Communication](https://crewclaw.com/blog/openclaw-agent-to-agent-communication) - How agents collaborate
+- [Build an AI Team](https://crewclaw.com/blog/build-ai-team-workflows) - Workflows that run autonomously
 
-### Advanced
+### Integrations & Automation
 
-- [Custom MCP Servers](tutorials/custom-mcp.md) - Build your own tools
-- [Agent Memory](tutorials/agent-memory.md) - Persistent context
-- [Production Deployment](tutorials/production.md) - Railway, Fly.io, etc.
+- [Slack & Telegram Integration](https://crewclaw.com/blog/openclaw-slack-telegram-integration) - Connect to messaging channels
+- [Run with Ollama](https://crewclaw.com/blog/openclaw-ollama-local-agents) - Free local AI agents
+- [Automation Guide](https://crewclaw.com/blog/openclaw-automation-guide) - Build 24/7 workflows
+- [CLI Commands Reference](https://crewclaw.com/blog/openclaw-cli-commands-reference) - Complete cheat sheet
 
-### Video Tutorials
+### Comparisons
 
-- [YouTube: OpenClaw in 10 Minutes](https://youtube.com/watch?v=xxx)
-- [YouTube: Building Your First Agent](https://youtube.com/watch?v=xxx)
-- [YouTube: iOS Shortcuts Deep Dive](https://youtube.com/watch?v=xxx)
+- [OpenClaw vs LangChain](https://crewclaw.com/blog/openclaw-vs-langchain) - Framework comparison
+- [OpenClaw vs AutoGPT](https://crewclaw.com/blog/openclaw-vs-autogpt) - Key differences
+- [OpenClaw vs CrewAI](https://crewclaw.com/blog/openclaw-vs-crewai) - Which is better?
 
 ---
 
 ## Community
 
-### Projects
-
-Awesome projects built with OpenClaw:
-
-| Project | Description | Author |
-|---------|-------------|--------|
-| [AI Content Studio](https://github.com/xxx) | Multi-agent content pipeline | @xxx |
-| [DevOps Copilot](https://github.com/xxx) | Infrastructure automation | @xxx |
-| [Personal CRM](https://github.com/xxx) | AI-powered relationship manager | @xxx |
-
-### Articles
-
-- [Building an AI Team That Works 24/7](https://medium.com/xxx)
-- [OpenClaw vs AutoGPT vs CrewAI](https://dev.to/xxx)
-- [The Future of AI Agents](https://blog.xxx.com)
-
-### Podcasts
-
-- [AI Agents Weekly - Episode 42](https://podcast.xxx)
-- [The Claude Cast - OpenClaw Deep Dive](https://podcast.xxx)
-
----
-
-## Contributing
+### Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md).
 
-### How to Add an Agent
+#### How to Add an Agent
 
 1. Fork this repository
 2. Create folder: `agents/[category]/[agent-name]/`
 3. Add `SOUL.md` and `README.md`
 4. Submit a Pull Request
 
-### Agent Template
+#### Agent Template
 
 ```markdown
 # Agent Name
@@ -249,9 +244,7 @@ Brief description of what this agent does.
 
 ## Setup
 
-\`\`\`bash
 openclaw agents add agent-name --workspace ./agents/agent-name
-\`\`\`
 
 ## Example Prompts
 
@@ -263,18 +256,15 @@ openclaw agents add agent-name --workspace ./agents/agent-name
 
 ## Related Projects
 
-- [🦀 CrewClaw](https://crewclaw.com) - Orchestrate your AI agents as a team. Connect agents from any framework, coordinate with @mentions, manage from dashboard or Telegram
-
-- [OpenClaw](https://github.com/anthropics/claude-code) - Official OpenClaw repository
-- [Clawdbot](https://github.com/xxx/clawdbot) - Advanced coordinator agent
-- [MoltBot](https://github.com/xxx/moltbot) - Content transformation agent
+- [🦀 CrewClaw](https://crewclaw.com) - Deploy and orchestrate AI agents as a team. No code required.
+- [OpenClaw](https://github.com/openclaw) - Official OpenClaw repository
 - [Anthropic MCP](https://github.com/anthropics/mcp) - Model Context Protocol
 
 ---
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=username/awesome-openclaw-agents&type=Date)](https://star-history.com/#username/awesome-openclaw-agents&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mergisi/awesome-openclaw-agents&type=Date)](https://star-history.com/#mergisi/awesome-openclaw-agents&Date)
 
 ---
 
@@ -288,4 +278,6 @@ To the extent possible under law, the contributors have waived all copyright and
 
 <p align="center">
   Made with 🦞 by the OpenClaw Community
+  <br/>
+  <a href="https://crewclaw.com/create-agent">Deploy your agent with CrewClaw →</a>
 </p>
